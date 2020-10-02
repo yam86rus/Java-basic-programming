@@ -1,13 +1,16 @@
 package Chapter17;
+//Задание 17.9
+//        Напишите метод, который получает в качестве параметра два числа
+//        (А и В) и выводит на экран все четные числа из диапазона А ... В.
 
 public class Ex17_9 {
     static void foo(int a, int b) {
         int min = 0;
         int max = 0;
-        if(a<b){
-            min =a;
+        if (a < b) {
+            min = a;
             max = b;
-        } else if (a>b){
+        } else if (a > b) {
             max = a;
             min = b;
         } else {
