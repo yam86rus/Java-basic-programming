@@ -9,16 +9,13 @@ import java.util.Scanner;
 public class Ex12_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите 17 целых чисел");
-        int a = scanner.nextInt();
-        int result = 0;
-        for (int i = 1; i <= 16; i++) {
-            int b = scanner.nextInt();
-            if (b>a){
-                result++;
-                a = b;
-            }
+        int count = 0;
+        int lastNumber = scanner.nextInt();
+        for (int i = 1; i <= 17; i++) {
+            int a = scanner.nextInt();
+            if (a > lastNumber) count++;
+            lastNumber = a;
         }
-        System.out.println("Чисел больше чем предыдущее число " + result);
+        System.out.println("чисел больше чем предыдущие число " + count);
     }
 }

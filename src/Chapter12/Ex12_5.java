@@ -10,19 +10,17 @@ package Chapter12;
 public class Ex12_5 {
     public static void main(String[] args) {
         int down = -25, up = 25;
-        int a = 0; // положительное?
-        int b = 0; // четное?
-        int c = 0; //однозначное?
+        int a = 0, b = 0, c = 0; //положительные, четные, однозначные
         for (int i = 1; i <= 15; i++) {
-            int d = down + (int) ((up - down + 1) * Math.random());
-            System.out.print(d + " ");
-            if (d % 2 == 0) b++;
-            if (d > 0) a++;
-            if (d > 0 && d <= 9) c++;
+            int n = down + (int) ((up - down + 1) * Math.random());
+            System.out.print(n + " ");
+            if (n > 0) a++;
+            if (n % 2 == 0) b++;
+            if (n > 0 && n < 10) c++;
         }
         System.out.println();
-        System.out.println("Положительных " + a);
-        System.out.println("Четных " + b);
-        System.out.println("Однозначных " + c);
+        System.out.println("Положительные: " + a);
+        System.out.println("Четные: " + b);
+        System.out.println("Однозначные: " + c);
     }
 }

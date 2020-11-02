@@ -9,13 +9,13 @@ import java.util.Scanner;
 public class Ex12_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите 12  целых чисел");
-        int a = scanner.nextInt();
-        int counter = 0;
-        for (int i = 1; i <= 12; i++) {
-            int b = scanner.nextInt();
-            if (b > a) counter++;
+        int count = 0;
+        int firstNumber = scanner.nextInt();
+        for (int i = 1; i <= 11; i++) {
+            int a = scanner.nextInt();
+            if (a>firstNumber) count++;
+
         }
-        System.out.println("Больше чем первое число" + counter);
+        System.out.println("из 12 введенных чисел, больше чем первое число " + count);
     }
 }
