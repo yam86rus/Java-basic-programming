@@ -1,6 +1,5 @@
 package Chapter11;
 
-import javafx.scene.effect.ImageInput;
 
 //Задание 11.18
 //        Напишите КJ1асс, который выводит на экран в строку положительные

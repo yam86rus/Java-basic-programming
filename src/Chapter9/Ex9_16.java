@@ -1,7 +1,5 @@
 package Chapter9;
 
-import org.junit.Assert;
-import org.junit.Test;
 import java.util.Scanner;
 
 //Задание 9.16

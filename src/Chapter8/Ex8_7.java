@@ -1,6 +1,5 @@
 package Chapter8;
 
-import javafx.scene.transform.Scale;
 
 import java.util.Scanner;
 
