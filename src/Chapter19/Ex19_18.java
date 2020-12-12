@@ -1,8 +1,6 @@
 package Chapter19;
 
-import javafx.print.Collation;
 
-import java.sql.Array;
 import java.util.*;
 
 //Задание 19.18
