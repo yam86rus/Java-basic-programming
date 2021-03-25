@@ -11,10 +11,11 @@ import static Chapter22.Ex22_9.setRandomNumbersToArray;
 public class Ex22_16 {
     public static int getMaxIntInDoubleArray(int[][] doubleArray) {
         int result = 0;
+        int countMaxValues = 0;
         for (int[] n : doubleArray) {
             for (int number : n) {
                 if (number > result) {
-                    result = number;
+
                 }
             }
         }
