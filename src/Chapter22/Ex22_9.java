@@ -12,8 +12,8 @@ public class Ex22_9 {
         int down = 1;
         int up = 3;
         for (int i = 0; i < da.length; i++) {
-            int rn = down + (int) ((up - down + 1) * Math.random());
             for (int j = 0; j < da[i].length; j++) {
+            int rn = down + (int) ((up - down + 1) * Math.random());
                 da[i][j] = rn;
             }
         }
